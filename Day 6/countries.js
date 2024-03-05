@@ -8,8 +8,11 @@ const countries = [
   "Germany",
   "Hungary",
   "Ireland",
+  "Iceland",
   "Japan",
   "Kenya",
+  "Arid",
+  "New Zeland",
 ];
 
 export default countries;
