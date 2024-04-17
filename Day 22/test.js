@@ -1,201 +1,72 @@
-let firstName = "Asabeneh";
-let lastName = "Yetayeh";
-let country = "Finland";
-let city = "Helsinki";
+{
+  /* <body>
+    <script> //create element
+        let title = document.createElement('h1')
+        title.className = 'title'
+        title.style.fontSize = '24px'
+        title.textContent = 'Creating HTML element DOM Day 2'
 
-const PI = Math.PI;
-const gravity = 9.81;
+        console.log(title)
+    </script>
 
-// arrays
-const namesB = ["Asabeneh", "Mathias", "Elias", "Brook"];
-const numbers = [0, 3.14, 9.81, 37, 98.6, 100];
-const countries = ["Finland", "Denmark", "Sweden", "Norway", "Iceland"];
-const languages = ["Amharic", "Arabic", "English", "French", "Spanish"];
-const skills = ["HTML", "CSS", "JavaScript", "React", "Python"];
-const fruits = ["banana", "orange", "mango", "lemon"];
-const vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"];
+    <script> //multiple elements
+        for (let i = 0; i < 3; i++) {
+            title = document.createElement('h1')
+            title.className = 'title'
+            title.style.fontSize = '24px'
+            title.textContent = i
+            console.log(title)
+        }
+    </script>
 
-// function which return full name of a person
-const printFullName = (firstName, lastName) => firstName + " " + lastName;
-
-// function which calculates a square of a number
-const square = (n) => n * n;
-
-// a function which generate random hexa colors
-const hexaColor = () => {
-  const str = "0123456789abcdef";
-  let hexa = "#";
-  let index;
-  for (let i = 0; i < 6; i++) {
-    index = Math.floor(Math.random() * str.length);
-    hexa += str[index];
-  }
-  return hexa;
-};
-
-// a function which shows date and time
-const showDateTime = () => {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = now.getMonth() + 1;
-  const date = now.getDate();
-  let hours = now.getHours();
-  let minutes = now.getMinutes();
-  if (hours < 10) {
-    hours = "0" + hours;
-  }
-  if (minutes < 10) {
-    minutes = "0" + minutes;
-  }
-
-  const dateMonthYear = date + "." + month + "." + year;
-  const time = hours + ":" + minutes;
-  const fullTime = dateMonthYear + " " + time;
-  return fullTime;
-};
-
-for (let i = 0; i < n; i++) {
-  console.log();
+    <script>
+        // creating multiple elements and appending to parent element
+        for (let i = 0; i < 3; i++) {
+            title = document.createElement('h1')
+            title.className = 'title'
+            title.style.fontSize = '24px'
+            title.textContent = i
+            document.body.appendChild(title)
+        }
+    </script>
+</body> */
 }
 
-// declaring an array variable
-const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
+// <h1>Removing child Node</h1>
+// <h2>Asabeneh Yetayeh challenges in 2020</h1>
+//     <ul>
+//         <li>30DaysOfPython Challenge Done</li>
+//         <li>30DaysOfJavaScript Challenge Done</li>
+//         <li>30DaysOfReact Challenge Coming</li>
+//         <li>30DaysOfFullStack Challenge Coming</li>
+//         <li>30DaysOfDataAnalysis Challenge Coming</li>
+//         <li>30DaysOfReactNative Challenge Coming</li>
+//         <li>30DaysOfMachineLearning Challenge Coming</li>
+//     </ul>
 
-// iterating an array using regular for loop
-let len = names.length;
-for (let i = 0; i < len; i++) {
-  console.log(names[i].toUpperCase());
-}
+//     <script>
+//         const ul = document.querySelector('ul')
+//         const lists = document.querySelectorAll('li')
+//         for (const list of lists) {
+//             ul.removeChild(list)
 
-// iterating an array using for of
-for (const name of names) {
-  console.log(name.toUpperCase());
-}
+//         }
+//     </script>
 
-// iterating array using forEach
-names.forEach((name) => name.toUpperCase());
+//     <!-- inner html -->
+//     <h1>Removing child Node</h1>
+//     <h2>Asabeneh Yetayeh challenges in 2020</h1>
+//         <ul>
+//             <li>30DaysOfPython Challenge Done</li>
+//             <li>30DaysOfJavaScript Challenge Done</li>
+//             <li>30DaysOfReact Challenge Coming</li>
+//             <li>30DaysOfFullStack Challenge Coming</li>
+//             <li>30DaysOfDataAnalysis Challenge Coming</li>
+//             <li>30DaysOfReactNative Challenge Coming</li>
+//             <li>30DaysOfMachineLearning Challenge Coming</li>
+//         </ul>
 
-const person = {
-  firstName: "Asabeneh",
-  lastName: "Yetayeh",
-  age: 250,
-  country: "Finland",
-  city: "Helsinki",
-  skills: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Node",
-    "MongoDB",
-    "Python",
-    "D3.js",
-  ],
-  isMarried: true,
-};
-for (const key in person) {
-  console.log(key);
-}
-
-// declaring object literal
-const personO = {
-  firstName: "Asabeneh",
-  lastName: "Yetayeh",
-  age: 250,
-  country: "Finland",
-  city: "Helsinki",
-  skills: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Node",
-    "MongoDB",
-    "Python",
-    "D3.js",
-  ],
-  isMarried: true,
-};
-// iterating through object keys
-for (const key in personO) {
-  console.log(key, personO[key]);
-}
-
-//if
-// syntax
-if (condition) {
-  // this part of code run for truthy condition
-} else {
-  // this part of code run for false condition
-}
-
-// if else
-let num = 3;
-if (num > 0) {
-  console.log(`${num} is a positive number`);
-} else {
-  console.log(`${num} is a negative number`);
-}
-//  3 is a positive number
-
-// if else if else if else
-
-let a = 0;
-if (a > 0) {
-  console.log(`${a} is a positive number`);
-} else if (a < 0) {
-  console.log(`${a} is a negative number`);
-} else if (a == 0) {
-  console.log(`${a} is zero`);
-} else {
-  console.log(`${a} is not a number`);
-}
-
-// Switch More Examples
-let dayUserInput = prompt("What day is today ?");
-let day = dayUserInput.toLowerCase();
-
-switch (day) {
-  case "monday":
-    console.log("Today is Monday");
-    break;
-  case "tuesday":
-    console.log("Today is Tuesday");
-    break;
-  case "wednesday":
-    console.log("Today is Wednesday");
-    break;
-  case "thursday":
-    console.log("Today is Thursday");
-    break;
-  case "friday":
-    console.log("Today is Friday");
-    break;
-  case "saturday":
-    console.log("Today is Saturday");
-    break;
-  case "sunday":
-    console.log("Today is Sunday");
-    break;
-  default:
-    console.log("It is not a week day.");
-}
-
-// ternary
-
-let isRaining = true;
-isRaining
-  ? console.log("You need a rain coat.")
-  : console.log("No need for a rain coat.");
-
-//Classes
-
-// defining class
-class Person {
-  constructor(firstName, lastName) {
-    console.log(this); // Check the output from here
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-}
+//         <script>
+//             const ul2 = document.querySelector('ul')
+//             ul2.innerHTML = ''
+//         </script>
