@@ -5,13 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="module" src="test.js"></script>
+    <script type="module" src="dayTwentyThreeJsTask2.js"></script>
     <title>30DaysOfJavaScript</title>
 </head>
 
 <body>
-    <h1>Day 20</h1>
-    <button onclick="alert('Welcome to 30DaysOfJavaScript')">Welcome</button>
+    <!-- <h2>Click</h2>
+    <button>Click Me</button>
+
+    <script>
+        const button = document.querySelector('button')
+        button.addEventListener('click', e => {
+            console.log('e gives the event listener object:', e)
+            console.log('e.target gives the selected element: ', e.target)
+            console.log(
+                'e.target.textContent gives content of selected element: ',
+                e.target.textContent
+            )
+        })
+    </script>
+
+    <h2>Onclick</h2>
+    <button onclick="clickMe()">Click Me</button>
+    <script>
+        const clickMe = () => {
+            alert('We can attach event on HTML element')
+        }
+    </script>
+
+    <h2>DobleClick</h2>
+    <button id="btn2">Click Me</button>
+    <script>
+        const button2 = document.querySelector('#btn2')
+        button2.addEventListener('dblclick', e => {
+            console.log('e gives the event listener object:', e)
+            console.log('e.target gives the selected element: ', e.target)
+            console.log(
+                'e.target.textContent gives content of selected element: ',
+                e.target.textContent
+            )
+        })
+    </script>
+
+    <h2>Mouse Enter</h2>
+    <button id="btn3">Click Me</button>
+    <script>
+        const button3 = document.querySelector('#btn3')
+        button3.addEventListener('mouseenter', e => {
+            console.log('e gives the event listener object:', e)
+            console.log('e.target gives the selected element: ', e.target)
+            console.log(
+                'e.target.textContent gives content of selected element: ',
+                e.target.textContent
+            )
+        })
+    </script>
+
+    <h2>input value</h2>
+    <h1>Body Mass Index Calculator</h1>
+
+    <input type="text" id="mass" placeholder="Mass in Kilogram" />
+    <input type="text" id="height" placeholder="Height in meters" />
+    <button id="btn4">Calculate BMI</button>
+
+    <script>
+        const mass = document.querySelector('#mass')
+        const height = document.querySelector('#height')
+        const button4 = document.querySelector('#btn4')
+
+        let bmi
+        button4.addEventListener('click', () => {
+            bmi = mass.value / height.value ** 2
+            alert(`your bmi is ${bmi.toFixed(2)}`)
+            console.log(bmi)
+        })
+    </script>
+
+    <h1>Data Binding using input or change event</h1>
+
+    <input id="inp2" type="text" placeholder="say something" />
+    <p></p>
+
+    <script>
+        const input = document.querySelector('#inp2')
+        const p = document.querySelector('p')
+
+        input.addEventListener('input', e => {
+            p.textContent = e.target.value
+        })
+    </script>
+
+
+    <h1>Giving feedback using blur event</h1>
+    <input id="inp3" type="text" id="mass" placeholder="say something" />
+    <p id="p3"></p>
+
+    <script>
+        const input3 = document.querySelector('#inp3')
+        const p3 = document.querySelector('#p3')
+
+        input3.addEventListener('blur', (e) => {
+            p3.textContent = 'Field is required'
+            p3.style.color = 'red'
+
+        })
+    </script>
+
+
+    <h1>Key events: Press any key</h1>
+
+    <script>
+        document.body.addEventListener('keypress', e => {
+            alert(e.keyCode)
+        })
+    </script> -->
+
 </body>
 
 </html>
