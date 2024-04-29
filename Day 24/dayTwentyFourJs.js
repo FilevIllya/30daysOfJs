@@ -169,6 +169,8 @@ calcButton.addEventListener("click", function () {
       return "ERROR";
   }
 
+  aboutMass.textContent = "The weight of the object on " + selectedPlanet;
+
   const weightOnPlanet = (mass * gravityCoefficient).toFixed(2);
   massP.textContent = weightOnPlanet + "N";
   massP.style.backgroundColor = "rgba(128, 128, 128, 0.8)";
